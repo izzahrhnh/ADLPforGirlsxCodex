@@ -34,6 +34,16 @@ body{display:flex!important;align-items:center!important;justify-content:center!
 .order-date-label small{color:var(--muted);font-size:11px;white-space:nowrap}
 .order-date-group .order-card:first-of-type{margin-top:0}
 .order-date-group .order-card:last-child{margin-bottom:0}
+.orders-tabs{margin-top:-2px!important;margin-bottom:4px!important}
+.more-page .list-title{margin:25px 0 11px!important}
+.more-page .more-list{padding:2px 16px!important}
+.more-page .more-list button{min-height:60px!important;padding:14px 3px!important;gap:13px!important}
+.more-page .more-list button:last-child{border-bottom:0}
+.more-page .more-list button span{min-width:0}
+.more-page .more-list button b{display:block;line-height:1.25}
+.more-page .more-list button small{display:block;margin-top:3px;color:var(--muted);font-size:12px;line-height:1.35}
+.more-page .more-list button svg:last-child{flex:none;margin-left:4px}
+.delete-btn{width:100%;min-height:44px;background:var(--red-bg);border:1px solid #f1c7c1;border-radius:13px;color:var(--red);font-weight:700;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px}
 @media(min-width:391px){.app,.auth-shell{border:1px solid var(--line);border-radius:28px;box-shadow:0 20px 50px rgba(34,58,42,.12)}}
 
 .auth-shell{min-height:100vh;padding:24px 18px;background:radial-gradient(circle at 10% 0,#d6f1df 0,transparent 34%),var(--cream);display:grid;place-items:center}.auth-card{width:100%;max-width:440px;background:rgba(255,254,250,.92);border:1px solid var(--line);border-radius:26px;padding:28px 20px;box-shadow:0 18px 45px rgba(34,58,42,.09)}.auth-card h1{font-family:Fraunces,serif;font-size:31px;margin:20px 0 6px}.auth-card>p{color:var(--muted);font-size:14px;margin:0 0 18px}.auth-logo{display:grid;gap:4px;justify-items:start}.auth-logo b{font-family:Fraunces,serif;font-size:22px}.auth-logo small{color:var(--muted);font-size:12px}.demo-note{font-size:11px;text-align:center;color:var(--muted);margin-top:16px}
