@@ -28,7 +28,7 @@ export default function App() {
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe>(recipesMock[0]);
   const [toast, setToast] = useState("");
   const notify = (text: string) => { setToast(text); window.setTimeout(() => setToast(""), 2600); };
-  const go = (target: Page) => { setPage(target); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const go = (target: Page) => { setPage(target); window.setTimeout(() => document.querySelector<HTMLElement>(".content")?.scrollTo({ top: 0, behavior: "smooth" }), 0); };
   const openOrder = (order: Order) => { setSelectedOrder(order); go("orderDetail"); };
   const changeStatus = (status: OrderStatus) => { setOrders(old => old.map(o => o.id === selectedOrder.id ? { ...o, status } : o)); setSelectedOrder(o => ({ ...o, status })); notify(`Order marked ${status}`); };
   const addOrder = (customer: string, productId: string, quantity: number, requiredDate: string, payment: Order["payment"], finalPrice?: number) => {

@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
 
+/* Keep SIFT as one mobile app canvas at every viewport size. */
+html,body{width:100%;height:100%;overflow:hidden!important}
+body{display:flex!important;align-items:center!important;justify-content:center!important}
+.app,.auth-shell{width:min(100%,390px)!important;height:min(100dvh,844px)!important;min-height:0!important;margin:0!important;overflow:hidden!important}
+.app{position:relative!important;display:grid!important;grid-template-rows:auto minmax(0,1fr) auto!important;padding:0!important}
+.topbar{height:82px!important;padding:0 18px!important}
+.content{min-width:0!important;max-width:none!important;overflow-y:auto!important;padding:0 18px 20px!important;scrollbar-width:none}
+.bottom-nav{position:static!important;width:100%!important;height:71px!important;display:flex!important;transform:none!important}
+.desktop-nav{display:none!important}
+.grid-summary{grid-template-columns:1fr 1fr!important}
+.home-columns{display:block!important}
+.overview{grid-template-columns:repeat(4,1fr)!important}
+.modal-backdrop{position:absolute!important;align-items:end!important}
+.modal{width:100%!important;max-width:390px!important;max-height:92%!important;border-radius:25px 25px 0 0!important}
+.toast{position:absolute!important;bottom:84px!important}
+@media(min-width:391px){.app,.auth-shell{border:1px solid var(--line);border-radius:28px;box-shadow:0 20px 50px rgba(34,58,42,.12)}}
+
 .auth-shell{min-height:100vh;padding:24px 18px;background:radial-gradient(circle at 10% 0,#d6f1df 0,transparent 34%),var(--cream);display:grid;place-items:center}.auth-card{width:100%;max-width:440px;background:rgba(255,254,250,.92);border:1px solid var(--line);border-radius:26px;padding:28px 20px;box-shadow:0 18px 45px rgba(34,58,42,.09)}.auth-card h1{font-family:Fraunces,serif;font-size:31px;margin:20px 0 6px}.auth-card>p{color:var(--muted);font-size:14px;margin:0 0 18px}.auth-logo{display:grid;gap:4px;justify-items:start}.auth-logo b{font-family:Fraunces,serif;font-size:22px}.auth-logo small{color:var(--muted);font-size:12px}.demo-note{font-size:11px;text-align:center;color:var(--muted);margin-top:16px}
 .sift-logo{display:inline-flex;align-items:center;gap:8px;color:var(--green);line-height:1}.sift-mark{width:38px;height:38px;display:block}.sift-wordmark{font-family:Fraunces,serif;font-size:21px;font-weight:700;letter-spacing:.04em;color:var(--ink)}.auth-logo .sift-mark{width:48px;height:48px}.auth-logo .sift-wordmark{font-size:28px}
 
